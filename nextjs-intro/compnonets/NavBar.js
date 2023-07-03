@@ -7,17 +7,20 @@ export default function NavBar(){
     return (
         <nav>
             <Link href="/">
-                Home
+                <span className={router.pathname === "/" ? "active" : ""}>Home</span>
             </Link>
             <Link href="/about">
-                About
+                <span className={router.pathname === "/about" ? "active" : ""}>About</span>
             </Link>
             <style jsx>{`
-              nav{
-                background-color:tomato;
+              nav {
+                background-color:deepskyblue;
               }
-              a{
+              a {
                 text-decoration: none;
+              }
+              .active {
+                color:yellow;
               }
             `}</style>
         </nav>

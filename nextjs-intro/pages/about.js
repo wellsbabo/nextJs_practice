@@ -1,6 +1,6 @@
 import NavBar from "@/compnonets/NavBar";
 
-export default function Potato(){
+export default function about(){
     return (
       <div>
           <NavBar/>
